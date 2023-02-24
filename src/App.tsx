@@ -1,3 +1,4 @@
+import { ToastContainer } from 'react-toastify'
 import { createClient, configureChains, mainnet, WagmiConfig } from 'wagmi'
 import { alchemyProvider } from 'wagmi/providers/alchemy'
 import { publicProvider } from 'wagmi/providers/public'
@@ -5,6 +6,7 @@ import { publicProvider } from 'wagmi/providers/public'
 // import { InjectedConnector } from 'wagmi/connectors/injected'
 import { MetaMaskConnector } from 'wagmi/connectors/metaMask'
 // import { WalletConnectConnector } from 'wagmi/connectors/walletConnect'
+import 'react-toastify/dist/ReactToastify.css'
 
 import Home from 'pages/Home'
 
@@ -45,6 +47,7 @@ const App = () => {
 	return (
 		<WagmiConfig client={client}>
 			<Home />
+			<ToastContainer autoClose={2000} closeOnClick pauseOnHover={false} theme="dark" />
 		</WagmiConfig>
 	)
 }

@@ -41,7 +41,7 @@ export const NFT = () => {
 
 const LiveAuctions = () => {
 	return (
-		<section className="py-10">
+		<section className="py-10" id="live-auctions">
 			<div className="container">
 				<div className="flex items-center justify-between">
 					<h4>Live Auctions</h4>

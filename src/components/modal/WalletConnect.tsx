@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import Modal from 'react-modal'
 import { useAccount, useConnect } from 'wagmi'
+import { toast } from 'react-toastify'
 
 import { ReactComponent as MetamaskIcon } from 'icons/metamask.svg'
 import { ReactComponent as CoinbaseIcon } from 'icons/coinbase.svg'

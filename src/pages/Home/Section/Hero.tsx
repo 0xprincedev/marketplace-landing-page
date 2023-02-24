@@ -2,6 +2,13 @@ import { ReactComponent as RocketIcon } from 'icons/rocket.svg'
 import { ReactComponent as NoteIcon } from 'icons/note.svg'
 
 const Hero = () => {
+	const handleExplore = () => {
+		window.scrollTo({
+			top: document.getElementById('live-auctions')?.offsetTop,
+			behavior: 'smooth',
+		})
+	}
+
 	return (
 		<section className="relative flex h-[calc(100vh-80px)] items-center">
 			<img
@@ -19,7 +26,10 @@ const Hero = () => {
 					</p>
 				</div>
 				<div className="mt-10 flex items-center gap-4">
-					<button className="group flex items-center gap-0.5 rounded-full border border-primary py-4 px-9 text-[15px] font-bold sm:px-6">
+					<button
+						className="group flex items-center gap-0.5 rounded-full border border-primary py-4 px-9 text-[15px] font-bold sm:px-6"
+						onClick={handleExplore}
+					>
 						<RocketIcon className="group-hover:animate-spin" />
 						Explore
 					</button>
