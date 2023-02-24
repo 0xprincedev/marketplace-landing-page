@@ -11,7 +11,7 @@ const Header = () => {
 				<div className="flex h-20 items-center">
 					<div className="flex items-center gap-2.5 text-4xl font-bold">
 						<Logo />
-						Axies
+						Linda
 					</div>
 					<nav className="ml-auto flex items-center gap-10 text-lg font-bold lg:hidden">
 						{header.map((item) => (

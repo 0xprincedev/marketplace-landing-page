@@ -12,7 +12,7 @@ const Footer = () => {
 					<div className="max-w-[240px]">
 						<div className="flex items-center gap-3 text-4xl font-bold">
 							<img src="/images/logo.png" alt="" className="h-10" />
-							Axies
+							Linda
 						</div>
 						<p className="mt-3 text-sm">
 							Lorem ipsum dolor sit amet,consectetur adipisicing elit. Quis non, fugit
