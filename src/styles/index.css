@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+body {
+	@apply font-[Urbanist] text-white;
+}
+
+.container {
+	@apply !mx-auto !w-[1410px] xl:!mx-0 xl:!w-full xl:!px-16 lg:!px-8 sm:!px-4;
+}
+
+.gradient-text {
+	background: -webkit-linear-gradient(216.56deg, #e250e5 5.32%, #4b50e6 94.32%);
+	-webkit-background-clip: text;
+	-webkit-text-stroke: 2px transparent;
+}
