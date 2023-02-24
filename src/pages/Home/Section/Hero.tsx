@@ -25,7 +25,7 @@ const Hero = () => {
 					</button>
 					<button className="group flex items-center gap-2 rounded-full bg-white py-4 px-9 text-[15px] font-bold text-bg-second sm:px-6">
 						<NoteIcon className="group-hover:animate-pulse" />
-						Explore
+						Create
 					</button>
 				</div>
 			</div>
