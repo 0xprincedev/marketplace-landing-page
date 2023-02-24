@@ -33,7 +33,7 @@ const Footer = () => {
 							</div>
 						</div>
 					</div>
-					<div className="flex flex-wrap justify-center gap-24">
+					<div className="flex flex-wrap gap-24">
 						<div className="flex flex-col gap-6">
 							<p className="text-lg font-bold">My Account</p>
 							<ul className="flex flex-col gap-4 text-sm">
