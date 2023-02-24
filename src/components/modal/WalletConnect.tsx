@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import Modal from 'react-modal'
-// import { useAccount, useConnect } from 'wagmi'
+import { useAccount, useConnect } from 'wagmi'
 
 import { ReactComponent as MetamaskIcon } from 'icons/metamask.svg'
 import { ReactComponent as CoinbaseIcon } from 'icons/coinbase.svg'
@@ -19,14 +19,14 @@ const icons = [
 
 const WalletConnectModal = (props: Props) => {
 	const { open, closeModal } = props
-	// const { address } = useAccount()
-	// const { connect, connectors, isLoading, pendingConnector } = useConnect()
+	const { address } = useAccount()
+	const { connect, connectors, isLoading, pendingConnector } = useConnect()
 
-	// useEffect(() => {
-	// 	if (address) {
-	// 		closeModal()
-	// 	}
-	// }, [address]) //eslint-disable-line
+	useEffect(() => {
+		if (address) {
+			closeModal()
+		}
+	}, [address]) //eslint-disable-line
 
 	return (
 		<Modal isOpen={open} onRequestClose={closeModal}>
@@ -34,7 +34,7 @@ const WalletConnectModal = (props: Props) => {
 				<div className="absolute top-2 right-2" onClick={closeModal}></div>
 				<h1 className="title">Connect to wallet</h1>
 				<div className="mt-4 grid gap-4">
-					{/* {connectors.map((connector: any, index: number) => (
+					{connectors.map((connector: any, index: number) => (
 						<button
 							disabled={!connector.ready}
 							key={connector.id}
@@ -46,7 +46,7 @@ const WalletConnectModal = (props: Props) => {
 							{!connector.ready && ' (unsupported)'}
 							{isLoading && connector.id === pendingConnector?.id && ' (connecting)'}
 						</button>
-					))} */}
+					))}
 				</div>
 			</div>
 		</Modal>

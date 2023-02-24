@@ -40,3 +40,10 @@ h4 {
 .scrollbar::-webkit-scrollbar-thumb:hover {
 	background: #555;
 }
+
+.ReactModal__Overlay {
+	@apply z-[1000] flex items-center justify-center !bg-[#0004] backdrop-blur-sm;
+}
+.ReactModal__Content {
+	@apply !relative !w-80 !border-none !bg-background;
+}
