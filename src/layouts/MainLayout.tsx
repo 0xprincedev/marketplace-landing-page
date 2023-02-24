@@ -8,7 +8,7 @@ interface ILayoutProps {
 
 const MainLayout = ({ children, className = '' }: ILayoutProps) => {
 	return (
-		<div className="min-h-screen bg-background">
+		<div className="min-h-screen overflow-x-hidden bg-background">
 			<Header />
 			<main>{children}</main>
 			<Footer />

@@ -58,13 +58,13 @@ const TodayPicks = () => {
 		<section className="py-10">
 			<div className="container">
 				<div className="flex items-center justify-between">
-					<h4 className="text-4xl font-bold">Today's Picks</h4>
+					<h4>Today's Picks</h4>
 					<div className="cursor-pointer">
 						<p className="text-sm font-bold uppercase tracking-[10%]">Explore more</p>
 						<div className="h-px bg-gradient-to-r from-[#E250E5] to-[#4B50E6]"></div>
 					</div>
 				</div>
-				<div className="mt-9 grid grid-cols-4 gap-x-6 gap-y-10">
+				<div className="mt-9 grid grid-cols-4 gap-x-6 gap-y-10 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
 					<NFT />
 					<NFT comingSoon />
 					<NFT />

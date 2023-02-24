@@ -20,9 +20,9 @@ const CreateAndSellYourNFTs = () => {
 		<section className="pt-10 pb-20">
 			<div className="container">
 				<div className="flex items-center justify-between">
-					<h4 className="text-4xl font-bold">Create And Sell Your NFTs</h4>
+					<h4>Create And Sell Your NFTs</h4>
 				</div>
-				<div className="mt-10 grid grid-cols-4 gap-10">
+				<div className="mt-10 grid grid-cols-4 gap-10 lg:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1">
 					<Item />
 					<Item />
 					<Item />

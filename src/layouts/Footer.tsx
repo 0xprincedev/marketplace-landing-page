@@ -8,7 +8,7 @@ const Footer = () => {
 	return (
 		<footer className="bg-[#0D0D11] py-20">
 			<div className="container">
-				<div className="flex justify-between">
+				<div className="flex justify-between gap-10 lg:flex-col">
 					<div className="max-w-[240px]">
 						<div className="flex items-center gap-3 text-4xl font-bold">
 							<img src="/images/logo.png" alt="" className="h-10" />
@@ -33,7 +33,7 @@ const Footer = () => {
 							</div>
 						</div>
 					</div>
-					<div className="flex gap-24">
+					<div className="flex flex-wrap justify-center gap-24">
 						<div className="flex flex-col gap-6">
 							<p className="text-lg font-bold">My Account</p>
 							<ul className="flex flex-col gap-4 text-sm">

@@ -41,16 +41,18 @@ const PopularCollection = () => {
 		<section className="py-10">
 			<div className="container">
 				<div className="flex items-center justify-between">
-					<h4 className="text-4xl font-bold">Popular Collection</h4>
+					<h4 className="sm:text-2xl">Popular Collection</h4>
 					<div className="cursor-pointer">
 						<p className="text-sm font-bold uppercase tracking-[10%]">Explore more</p>
 						<div className="h-px bg-gradient-to-r from-[#E250E5] to-[#4B50E6]"></div>
 					</div>
 				</div>
-				<div className="mt-10 grid grid-cols-3 gap-6">
-					<Collection />
-					<Collection />
-					<Collection />
+				<div className="scrollbar overflow-x-auto">
+					<div className="mt-10 grid min-w-[1280px] grid-cols-3 gap-6">
+						<Collection />
+						<Collection />
+						<Collection />
+					</div>
 				</div>
 			</div>
 		</section>

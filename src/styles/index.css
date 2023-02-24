@@ -11,8 +11,32 @@ body {
 	@apply !mx-auto !w-[1410px] xl:!mx-0 xl:!w-full xl:!px-16 lg:!px-8 sm:!px-4;
 }
 
+h4 {
+	@apply text-4xl font-bold sm:text-3xl;
+}
+
 .gradient-text {
 	background: -webkit-linear-gradient(216.56deg, #e250e5 5.32%, #4b50e6 94.32%);
 	-webkit-background-clip: text;
 	-webkit-text-stroke: 2px transparent;
+}
+
+.scrollbar::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+/* Track */
+.scrollbar::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+/* Handle */
+.scrollbar::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+.scrollbar::-webkit-scrollbar-thumb:hover {
+	background: #555;
 }

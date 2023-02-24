@@ -10,7 +10,7 @@ const Hero = () => {
 				className="absolute top-0 left-0 h-[calc(100vh-80px)] w-screen object-cover"
 			/>
 			<div className="container relative z-10">
-				<div className="text-[56px] font-bold leading-tight">
+				<div className="text-[56px] font-bold leading-tight sm:text-4xl">
 					<p>Discover, find,</p>
 					<p className="gradient-text text-background">Sell extraordinary</p>
 					<p>Monster NFTs</p>
@@ -19,11 +19,11 @@ const Hero = () => {
 					</p>
 				</div>
 				<div className="mt-10 flex items-center gap-4">
-					<button className="group flex items-center gap-0.5 rounded-full border border-primary py-4 px-9 text-[15px] font-bold">
+					<button className="group flex items-center gap-0.5 rounded-full border border-primary py-4 px-9 text-[15px] font-bold sm:px-6">
 						<RocketIcon className="group-hover:animate-spin" />
 						Explore
 					</button>
-					<button className="group flex items-center gap-2 rounded-full bg-white py-4 px-9 text-[15px] font-bold text-bg-second">
+					<button className="group flex items-center gap-2 rounded-full bg-white py-4 px-9 text-[15px] font-bold text-bg-second sm:px-6">
 						<NoteIcon className="group-hover:animate-pulse" />
 						Explore
 					</button>

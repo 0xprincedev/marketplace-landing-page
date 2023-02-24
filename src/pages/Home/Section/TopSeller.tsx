@@ -23,15 +23,20 @@ const TopSeller = () => {
 		<section className="py-10">
 			<div className="container">
 				<div>
-					<h4 className="text-4xl font-bold">Top Seller</h4>
+					<h4>Top Seller</h4>
 				</div>
-				<div className="mt-9 flex gap-10">
-					<Seller />
-					<Seller />
-					<Seller />
-					<Seller />
-					<Seller />
-					<Seller />
+				<div className="scrollbar overflow-x-auto">
+					<div className="mt-9 flex min-w-[1280px] gap-10">
+						<Seller />
+						<Seller />
+						<Seller />
+						<Seller />
+						<Seller />
+						<Seller />
+						<Seller />
+						<Seller />
+						<Seller />
+					</div>
 				</div>
 			</div>
 		</section>
